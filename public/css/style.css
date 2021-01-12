@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Numans);
+
+table {
+font-size:large!important;
+border:1px solid #000!important;
+margin:0 auto!important;
+}
+
+h1 {
+text-align:center!important;
+color:#060!important;
+font-size:xx-large!important;
+font-family:'Gill Sans', 'Gill Sans MT', ' Calibri', 'Trebuchet MS', sans-serif!important;
+}
+
+td {
+background-color:#E4F5D4!important;
+border:1px solid #000!important;
+font-weight:lighter!important;
+}
+
+th,td {
+font-weight:700!important;
+border:1px solid #000!important;
+text-align:center!important;
+padding:10px!important;
+}
+
+.form-gap {
+padding-top:70px;
+}
+
+.container {
+height:100%;
+align-content:center;
+}
+
+.card {
+height:370px;
+margin-top:auto;
+margin-bottom:auto;
+width:400px;
+background-color:rgba(0,0,0,0.5)!important;
+}
+
+.social_icon span {
+font-size:60px;
+margin-left:10px;
+color:#FFC312;
+}
+
+.social_icon span:hover {
+color:#FFF;
+cursor:pointer;
+}
+
+.social_icon {
+position:absolute;
+right:20px;
+top:-45px;
+}
+
+.input-group-prepend span {
+width:50px;
+background-color:#FFC312;
+color:#000;
+border:0!important;
+}
+
+input:focus {
+outline:0 0 0 0!important;
+box-shadow:0 0 0 0!important;
+}
+
+.remember input {
+width:20px;
+height:20px;
+margin-left:15px;
+margin-right:5px;
+}
+
+.login_btn {
+color:#000;
+background-color:#FFC312;
+width:100px;
+}
+
+.login_btn:hover {
+color:#000;
+background-color:#FFF;
+}
+
+.links a {
+margin-left:4px;
+}
+
+.tab {
+overflow:hidden;
+border:1px solid #ccc;
+background-color:#f1f1f1;
+}
+
+.tab button {
+background-color:inherit;
+float:left;
+border:none;
+outline:none;
+cursor:pointer;
+transition:.3s;
+font-size:17px;
+padding:14px 16px;
+}
+
+.tab button:hover {
+background-color:#ddd;
+}
+
+.tab button.active {
+background-color:#ccc;
+}
+
+.tabcontent {
+display:none;
+border:1px solid #ccc;
+border-top:none;
+padding:6px 12px;
+}
+
+.card-header h3,.remember,.links {
+color:#FFF;
+}
