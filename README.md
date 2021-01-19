@@ -12,6 +12,15 @@ This School Management System (SMS) it is a complete web based portal applicatio
 #
 #
 
+## Installation
+- Move SMS source code to the web directory of your choice.
+- Create a new MySQL database.
+- Import the databse
+- Modify the file app/models/singleton.php with your database details, for example.
+
+#
+#
+
 ## Overview:
   
   
