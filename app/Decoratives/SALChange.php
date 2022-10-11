@@ -6,9 +6,12 @@ include_once 'SalaryAmount.php';
      
      function __construct(SalaryAmount $SalaryAmount) {
          $this->SalaryAmount=$SalaryAmount;
+      
+      
      }
 
 
+  
   
 
      abstract function doubleTotalsalary();

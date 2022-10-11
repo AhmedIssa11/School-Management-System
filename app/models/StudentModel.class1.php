@@ -45,15 +45,13 @@ class Student
         if($id!="")
         {
            
-          //  echo "id is  ".$id;
-            //where studentId=$id
+
            
             
             $stmt = $connect->prepare("SELECT * FROM student where studentId = $id ");
                 
 		$stmt->execute();
                  $row = $stmt->fetchAll();
-//                 echo $row["Level"];
                 foreach ($row as $x) {
                   //  ECHO "GOOD";
                    $this->studentName=$x["studentName"];
@@ -63,7 +61,7 @@ class Student
                    $this->stdRes=$x["stdRes"];
                    $this->studentId=$id;
                    $this->payment=$x["payment"];
-                   //echo "result ".$this->stdRes;
+  
                    
                    /////////////////////////////////////////////////
                    
@@ -138,72 +136,7 @@ class Student
     }
  
    
-//    function countStudent() {
-//
-//		$connect = $Db->getConnection();
-//
-//		$stmt = $connect->prepare("SELECT COUNT(studentid) FROM student");
-//
-//		$stmt->execute();
-//
-//		return $stmt->fetchColumn();
-//    }
-//    
-//    function showStudentDetails() {
-//
-//		$connect = $Db->getConnection();
-//
-//		$stmt = $connect->prepare("SELECT * FROM student");
-//
-//		$stmt->execute();
-//
-//        $row = $stmt->fetchAll();
-//
-//		return $row;
-//    }
-//
-//    function showStudentCourses($id) {
-//
-//		$connect = $Db->getConnection();
-//
-//		$stmt = $connect->prepare("SELECT * FROM course WHERE stdid = $id");
-//
-//		$stmt->execute();
-//
-//        $row = $stmt->fetchAll();
-//
-//		return $row;
-//    }
-//
-//    function showStudentShud($id) {
-//
-//		$connect = $Db->getConnection();
-//
-//		$stmt = $connect->prepare("SELECT * FROM schedule WHERE stdid = $id");
-//
-//		$stmt->execute();
-//
-//                $row = $stmt->fetchAll();
-//
-//		return $row;
-//    }
-//    function ShowQuizzes($id){ 
-//        
-//        
-//        $connect = $Db->getConnection();
-//
-//		$stmt = $connect->prepare("SELECT * FROM quiz WHERE QYear = $this->studentLv");
-//
-//		$stmt->execute();
-//
-//                $row = $stmt->fetchAll();
-//
-//		return $row;
-//        
-//        
-//        
-//        
-//    }
+
     
    
         
